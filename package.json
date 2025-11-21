@@ -1,0 +1,29 @@
+{
+  "name": "node-red-auth-google",
+  "version": "0.0.1",
+  "description": "Node-RED Authentication with Google",
+  "keywords": [
+    "node-red",
+    "authentication",
+    "oauth",
+    "google"
+  ],
+  "homepage": "https://github.com/by-wise/node-red-auth-google#readme",
+  "bugs": {
+    "url": "https://github.com/by-wise/node-red-auth-google/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/by-wise/node-red-auth-google.git"
+  },
+  "license": "MIT",
+  "author": "By Wise",
+  "type": "commonjs",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "passport-google-oauth": "^2.0.0"
+  }
+}
