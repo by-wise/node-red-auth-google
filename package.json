@@ -1,6 +1,6 @@
 {
   "name": "@by-wise/node-red-auth-google",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "Node-RED Authentication with Google",
   "keywords": [
     "node-red",
