@@ -11,7 +11,9 @@ users.
 
 In your Node-RED user directory, typically `~/.node-red`:
 
-    $ npm install @by-wise/node-red-auth-google
+```console
+$ npm install @by-wise/node-red-auth-google
+```
 
 ## Usage
 
@@ -28,14 +30,16 @@ you will need to use to configure the authentication plugin.
 Access control for the Node-RED editor is configured in your `settings.js` file
 using the `adminAuth` property.
 
-    adminAuth: require('require('@by-wise/node-red-auth-google')({')({
-        clientID: GOOGLE_CLIENT_ID,
-        clientSecret: GOOGLE_CLIENT_SECRET,
-        baseURL: "http://localhost:1880/",
-        users: [
-           { username: "google_user_id",permissions: ["*"]}
-        ]
-    })
+```javascript
+adminAuth: require('@by-wise/node-red-auth-google')({
+    clientID: GOOGLE_CLIENT_ID,
+    clientSecret: GOOGLE_CLIENT_SECRET,
+    baseURL: "http://localhost:1880/",
+    users: [
+        { username: "google_user_id",permissions: ["*"]}
+    ]
+})
+```
 
 The `baseURL` property is the URL used to access the Node-RED editor.
 
@@ -44,13 +48,16 @@ editor. It is the same as used by `adminAuth` as described in the [security docu
 
 A default user can be specified by adding a `default` property to the options object:
 
-    users: [
-           ...
-        ],
-        default: {
-            permissions: "read"
-        }
+```javascript
+users: [
+        ...
+    ],
+default: {
+        permissions: "read"
+    }
+```
 
 ## Copyright and license
 
-Copyright JS Foundation and other contributors, http://js.foundation under [the Apache 2.0 license](LICENSE).
+By Wise Consulting, http://bywise.com.br under [the MIT license](https://mit-license.org/).
+Based on [node-red-auth-github](https://github.com/node-red/node-red-auth-github): Copyright JS Foundation and other contributors, http://js.foundation under [the Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.txt).
