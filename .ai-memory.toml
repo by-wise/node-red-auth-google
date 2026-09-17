@@ -1,0 +1,3 @@
+workspace = "by-wise-sistemas-internos"
+project = "node-red-auth-google"
+project_strategy = "repo-root"
